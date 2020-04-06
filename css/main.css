@@ -566,73 +566,8 @@ html {
 html {
     overflow: scroll
 }
-
-.video-wrapper {
-    min-height: 300px;
-    position: relative
-}
-
-.video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 300px;
-    transition: all .5s ease;
-    z-index: 1;
-    -webkit-filter: brightness(100%) contrast(100%);
-    filter: brightness(100%) contrast(100%)
-}
-
-.video_active {
-    z-index: 10;
-    background: #000
-}
-
-.video-controls-wrap {
-    box-sizing: border-box;
-    padding: 40px;
-    display: block;
-    width: 100%
-}
-
-.video-controls {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background: rgba(255, 255, 255, .9);
-    z-index: 20;
-    overflow: hidden;
-    transition: height .5s ease
-}
-
-.video-controls_active {
-    height: 92px
-}
-
 .controls-text {
     float: left
-}
-
-.video-control {
-    float: left
-}
-
-.video-volume {
-    background: url(../img/sound_n.png);
-    background-size: cover;
-    height: 40px;
-    width: 40px;
-    margin-left: 40px;
-    cursor: pointer
-}
-
-.video-volume_unmuted {
-    background: green;
-    background: url(../img/sound.png);
-    background-size: cover
 }
 
 @media (max-width: 1230px) {
@@ -870,15 +805,5 @@ html {
 
     .footer-menu {
         padding-left: 20px
-    }
-
-    .card-video {
-        overflow: visible
-    }
-
-    .video-control {
-        margin-right: 100px;
-        margin-bottom: 10px;
-        margin-top: 10px
     }
 }

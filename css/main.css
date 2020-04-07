@@ -214,13 +214,13 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 
 @font-face {
     font-family: OpenSansReg;
-    src: url("../assets/OpenSans-Regular.ttf");
+    src: url("../assets/OpenSans-Regular.woff2") format("woff2");
     font-weight: bold;
 }
 
 @font-face {
     font-family: OpenSansLight;
-    src: url("../assets/OpenSans-Light.ttf");
+    src: url("../assets/OpenSans-Light.woff2") format("woff2");
 }
 
 body {

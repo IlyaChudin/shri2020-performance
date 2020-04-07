@@ -216,11 +216,13 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     font-family: OpenSansReg;
     src: url("../assets/OpenSans-Regular.woff2") format("woff2");
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: OpenSansLight;
     src: url("../assets/OpenSans-Light.woff2") format("woff2");
+    font-display: swap;
 }
 
 body {

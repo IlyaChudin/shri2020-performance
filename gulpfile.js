@@ -44,10 +44,13 @@ function js() {
     )
     .pipe(gulp.dest("./js/"));
 }
-
+function watch() {
+  gulp.watch("./src/**/*.*",gulp.parallel(html, css, js));
+}
 exports.css = css;
 exports.svg = svg;
 exports.html = html;
 exports.js = js;
+exports.watch = watch;
 exports.nosvg = gulp.parallel(html, css, js);
 exports.default = gulp.parallel(html, css, svg, js);

@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
+  lozad(document.querySelector(".critical-cam")).observe();
   const confirmPurchaseButton = document.querySelector(".buttons-wrap .button_yellow");
   confirmPurchaseButton.onclick = () => {
     const buttonsContainer = document.querySelector(".buttons-wrap");

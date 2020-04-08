@@ -2,9 +2,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="robots" content="noindex">
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="./assets/OpenSans-Regular.woff2">
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="./assets/OpenSans-Light.woff2">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="favicon.png">
-    <script src="./js/main.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
 <header>
@@ -37,7 +40,7 @@
                     <p class="card-time">19:00, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big">Так держать! За последнюю неделю вы потратили на 10% меньше ресурсов, чем неделей ранее.</p><div class="card-data card-data_graph">
-                <img class="card-data_graph-img" src="img/bg.png">
+                <img class="card-data_graph-img" src="img/bg.webp">
             </div></div>
 
 
@@ -207,7 +210,7 @@
                     <p class="card-time">16:17, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
-                <div class="critical-cam" touch-action="none" style="background-position: 0px 0px; background-size: 100%; filter: brightness(100%);">
+                <div class="critical-cam" data-background-image="img/cam2.webp" touch-action="none" style="background-position: 0px 0px; background-size: 100%; filter: brightness(100%);">
 
                 </div>
 

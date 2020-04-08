@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:css": "gulp css",
-    "build:js": "terser src/js/main.js -c -m -o js/main.js"
+    "build": "gulp nosvg",
+    "build:svg": "gulp svg"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-terser-js": "^5.1.2",
     "terser": "^4.6.10"
   }
 }

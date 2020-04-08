@@ -1,7 +1,26 @@
 "use strict";
 
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0 || entry.isIntersecting) {
+      const target = entry.target;
+      observer.unobserve(target);
+      if (target.getAttribute("data-loaded") !== "true") {
+        if (target.getAttribute("data-src")) {
+          target.src = target.getAttribute("data-src");
+        }
+        if (target.getAttribute("data-background-image")) {
+          target.style.backgroundImage = `url('${target.getAttribute("data-background-image")}')`;
+        }
+        target.setAttribute("data-loaded", true);
+      }
+    }
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
-  lozad(document.querySelectorAll("img[data-src], div.critical-cam")).observe();
+  document.querySelectorAll("img[data-src], div.critical-cam").forEach((x) => observer.observe(x));
+  
   const confirmPurchaseButton = document.querySelector(".buttons-wrap .button_yellow");
   confirmPurchaseButton.onclick = () => {
     const buttonsContainer = document.querySelector(".buttons-wrap");

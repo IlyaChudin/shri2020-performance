@@ -357,28 +357,6 @@ input[type=range].volume-range::-ms-track {
     border: none
 }
 
-input[type=range]::-ms-fill-lower {
-    background: #2a6495;
-    border: .2px solid #010101;
-    border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d
-}
-
-input[type=range]:focus::-ms-fill-lower {
-    background: #3071a9
-}
-
-input[type=range]::-ms-fill-upper {
-    background: #3071a9;
-    border: .2px solid #010101;
-    border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d
-}
-
-input[type=range]:focus::-ms-fill-upper {
-    background: #367ebd
-}
-
 body, html {
     font-family: Arial;
     padding: 0;
@@ -485,11 +463,6 @@ footer {
 .card_size_l {
     grid-column: span 4;
     grid-row: span 3
-}
-
-.card_size_c {
-    grid-column: span 3;
-    grid-row: span 2
 }
 
 .critical {
